@@ -1,0 +1,579 @@
+{
+  "sections": {
+    "slideshow_TJ8KBa": {
+      "type": "slideshow",
+      "blocks": {
+        "image_yYUE8X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_16_apr_2025_13_44_57.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "NEW SEASON — FREE TRACKED SHIPPING",
+            "title": "Quality you can wear every day",
+            "heading_tag": "h1",
+            "button_text": "Shop now",
+            "button_link": "shopify://collections/all",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 22,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": ["image_yYUE8X"],
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "split_women": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/ChatGPT_Image_15_apr_2025_21_09_22.png",
+            "subheading": "For Her",
+            "title": "Women",
+            "url": "shopify://collections/apr-vrouwen",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 28
+          }
+        },
+        "split_men": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/ChatGPT_Image_16_apr_2025_12_51_03.png",
+            "subheading": "For Him",
+            "title": "Men",
+            "url": "shopify://collections/apr-mannen",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 28
+          }
+        }
+      },
+      "block_order": ["split_women", "split_men"],
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row": 2,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_quality_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "qh": {
+          "type": "heading",
+          "settings": {
+            "text": "Quality & style",
+            "heading_tag": "h2"
+          }
+        },
+        "qp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We believe in quality over quantity. That means considered fabrics, dependable construction, and pieces that travel easily from weekdays to evenings out—without chasing trends that fade.</p>"
+          }
+        }
+      },
+      "block_order": ["qh", "qp"],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "text_with_icons_gp": {
+      "type": "text-with-icons",
+      "blocks": {
+        "pill_eco": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 28,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Eco-conscious",
+            "content": "<p>Materials and packaging chosen with sustainability in mind.</p>"
+          }
+        },
+        "pill_ship": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 28,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Tracked delivery on qualifying orders.</p>"
+          }
+        },
+        "pill_returns": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-return",
+            "mobile_icon_width": 28,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Easy returns",
+            "content": "<p>Stress-free exchanges and returns.</p>"
+          }
+        },
+        "pill_pay": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 28,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Secure checkout",
+            "content": "<p>Your payment details are encrypted and protected.</p>"
+          }
+        }
+      },
+      "block_order": ["pill_eco", "pill_ship", "pill_returns", "pill_pay"],
+      "settings": {
+        "full_width": true,
+        "heading_tag": "h4",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#f8f8f8",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "testimonials_loved": {
+      "type": "testimonials",
+      "blocks": {
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Sophie K. — London",
+            "title": "",
+            "content": "<p>“Lovely quality and fits true to size. Shipping was fast and the pieces feel much more premium than I expected.”</p>"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "James R. — Manchester",
+            "title": "",
+            "content": "<p>“Smart casual staples that actually last. Checkout was seamless and tracking updates were accurate.”</p>"
+          }
+        },
+        "t3": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Priya N. — Leeds",
+            "title": "",
+            "content": "<p>“Return process was painless when I swapped for a larger size—customer service replied the same day.”</p>"
+          }
+        },
+        "t4": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Tom W. — Edinburgh",
+            "title": "",
+            "content": "<p>“Great fabric hand-feel on the shirt I ordered—exactly how it looked in the photos.”</p>"
+          }
+        }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "Loved by our customers",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
+    "rich_text_trust_strip": {
+      "type": "rich-text",
+      "blocks": {
+        "th": {
+          "type": "heading",
+          "settings": {
+            "text": "Proven quality — trusted shoppers",
+            "heading_tag": "h3"
+          }
+        },
+        "tp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>From fabric selection through dispatch, every order is handled carefully. Thousands of wardrobes trust us for understated, everyday luxury—join them and shop with confidence.</p><ul><li>Responsive support when you need it</li><li>Thoughtful tailoring and grading on core fits</li><li>Tracked delivery on qualifying orders</li></ul>"
+          }
+        }
+      },
+      "block_order": ["th", "tp"],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "apr-vrouwen",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "Woman",
+        "title": "Bestsellers",
+        "content": "",
+        "link_url": "shopify://collections/apr-vrouwen",
+        "link_text": "View collection",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "1664424230c4756b0e-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Beyond Chic London",
+            "heading_tag": "h0"
+          }
+        },
+        "1664424230c4756b0e-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>For lovers of smart casual clothing</p>"
+          }
+        }
+      },
+      "block_order": ["1664424230c4756b0e-1", "1664424230c4756b0e-2"],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/a-photo-of-a-store-with-a-yellow-hue-the_4DX_n69iSde8f7Yopplncg_UQybC5UgQlmiUoVf1clyXg.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10
+      }
+    },
+    "collection_list_aW83Wd": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_wAKWEj": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/ChatGPT_Image_16_apr_2025_13_17_32.png",
+            "subheading": "",
+            "title": "Shirts",
+            "url": "shopify://collections/shirts-tees",
+            "heading_tag": "h3",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_f9D9pe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/ChatGPT_Image_16_apr_2025_12_51_03.png",
+            "subheading": "",
+            "title": "Polos",
+            "url": "shopify://collections/shirts-tees",
+            "heading_tag": "h3",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_TnBL8h": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/ChatGPT_Image_16_apr_2025_13_00_30.png",
+            "subheading": "",
+            "title": "Sweaters",
+            "url": "shopify://collections/sweaters-new",
+            "heading_tag": "h3",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": ["collection_wAKWEj", "collection_f9D9pe", "collection_TnBL8h"],
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row": 3,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "SS25 Man",
+        "content": "",
+        "link_url": "shopify://collections/blazers-v-new",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "featured_collection_3Uqkx8": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "apr-mannen",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "Men",
+        "title": "New arrivals",
+        "content": "",
+        "link_url": "shopify://collections/all",
+        "link_text": "View collection",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "media-grid": {
+      "type": "media-grid",
+      "blocks": {
+        "item-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_15_apr_2025_21_34_27.png",
+            "title": "Contact",
+            "heading_tag": "h4",
+            "link_url": "shopify://pages/contact",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_15_apr_2025_21_28_33.png",
+            "title": "Join Our Team",
+            "heading_tag": "h4",
+            "link_url": "shopify://pages/join-our-team",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_GiUtXd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_16_apr_2025_11_10_28.png",
+            "title": "About us",
+            "heading_tag": "h4",
+            "link_url": "shopify://pages/about-us",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": ["item-3", "item-1", "image_GiUtXd"],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "166442457738b23caf-0": {
+          "type": "item",
+          "settings": {
+            "title": "Free premium shipping",
+            "content": "<p>We ship all our orders within the UK with Royal Mail. Do you order before 11 PM? Then your parcel will be sent the next day free of charge. So you will receive your order quickly and without extra costs!</p>"
+          }
+        },
+        "166442457738b23caf-1": {
+          "type": "item",
+          "settings": {
+            "title": "Returns",
+            "content": "<p>Not quite satisfied? No worries! You can easily and quickly return your order within 30 days of receipt. We make sure the process goes smoothly, so you don't have to worry.</p>"
+          }
+        },
+        "166442457738b23caf-2": {
+          "type": "item",
+          "settings": {
+            "title": "Size",
+            "content": "<p>Our clothes fit exactly as indicated in the size chart. You will find the size chart with each product, so you can always choose the right size and be sure it fits perfectly.</p>"
+          }
+        },
+        "item_i7Uw3z": {
+          "type": "item",
+          "settings": {
+            "title": "Neede more help?",
+            "content": "<p>Have a question or need advice? Don’t hesitate to contact us. We are here to assist you and provide expert guidance.<br/><br/>Email: info@beyondchiclondon.com<br/></p><p>Mon / Fri 09:00 - 17:00</p><p>Sat / Sun 10:00 - 17:00</p>"
+          }
+        }
+      },
+      "block_order": ["166442457738b23caf-0", "166442457738b23caf-1", "166442457738b23caf-2", "item_i7Uw3z"],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "Frequently Asked Questions",
+        "content": "<p>Answer to all your questions!</p>",
+        "team_avatar_width": 160,
+        "support_hours": "Mon / Fri 09:00 - 17:00Sat / Sun 10:00 - 17:00",
+        "answer_time": "Response within 24 hours",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow_TJ8KBa",
+    "collection-list",
+    "rich_text_quality_intro",
+    "text_with_icons_gp",
+    "testimonials_loved",
+    "rich_text_trust_strip",
+    "featured-collection",
+    "image-with-text-overlay",
+    "collection_list_aW83Wd",
+    "featured_collection_3Uqkx8",
+    "media-grid",
+    "faq"
+  ]
+}
