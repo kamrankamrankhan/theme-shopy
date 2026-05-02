@@ -1,0 +1,19 @@
+{%- comment -%}
+  Renders serif-style wordmark with optional accent on first "&" (Liquid escape-safe).
+  Accepts: heading (string), accent_color (hex or rgb string).
+{%- endcomment -%}
+{%- assign accent = accent_color | default: '#c5b358' -%}
+{%- assign lh = heading | strip -%}
+{%- if lh contains '&' -%}
+  {%- assign parts = lh | split: '&' -%}
+  {{- parts.first | strip | escape -}}
+  <span class="header__logo-amp" aria-hidden="true" style="color: {{ accent }}">&amp;</span>
+  {%- capture tail_wordmark -%}
+    {%- for p in parts offset: 1 -%}
+      {%- unless forloop.first -%}&{%- endunless -%}{{ p | strip }}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {{- tail_wordmark | strip | escape -}}
+{%- else -%}
+  {{- lh | escape -}}
+{%- endif -%}

@@ -88,7 +88,7 @@ the underlying logic of the menu.
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: var(--spacing-2) var(--header-part-gap);
+        gap: var(--spacing-6) var(--header-part-gap);
       }
 
       #shopify-section-{{ section.id }} .header__wrapper--nav-below .header__top-row {
@@ -119,19 +119,24 @@ the underlying logic of the menu.
       }
 
       #shopify-section-{{ section.id }} .header__bottom-nav .header__link-list {
-        --header-link-list-spacing: clamp(1rem, 2.5vw, 2.5rem);
+        --header-link-list-spacing: clamp(0.875rem, 2.2vw, 2rem);
         flex-wrap: wrap;
         justify-content: center;
         text-transform: uppercase;
-        letter-spacing: 0.06em;
-        font-family: var(--heading-font-family);
-        font-weight: 500;
-        font-size: 0.8125rem;
+        letter-spacing: 0.1em;
+        font-family: var(--text-font-family);
+        font-weight: 400;
+        font-size: clamp(0.6875rem, 0.9vw, 0.8125rem);
       }
 
       #shopify-section-{{ section.id }} .header__bottom-nav .header__link-list .link-faded-reverse,
       #shopify-section-{{ section.id }} .header__bottom-nav .header__link-list summary {
-        font-weight: 500;
+        font-weight: 400;
+      }
+
+      /* Thinner icons to match minimalist fashion headers */
+      #shopify-section-{{ section.id }} .header__top-row .tap-area svg[role="presentation"] {
+        stroke-width: 1.1;
       }
     }
   {%- endif -%}
@@ -155,6 +160,28 @@ the underlying logic of the menu.
     line-height: 1.2;
     font-weight: 400;
   }
+
+  #shopify-section-{{ section.id }} .header__logo-text-brand {
+    display: block;
+    font-family: var(--heading-font-family);
+    font-style: var(--heading-font-style);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: normal;
+    text-align: center;
+    font-size: clamp(1rem, 1.15vw + 0.85rem, 1.875rem);
+    line-height: 1.08;
+    color: rgb(var(--text-color));
+  }
+
+  {%- if nav_below -%}
+    @media screen and (min-width: 1150px) {
+      #shopify-section-{{ section.id }} .header__bottom-nav .icon-chevron-bottom {
+        opacity: 0.75;
+      }
+    }
+  {%- endif -%}
 </style>
 
 <height-observer variable="header">
@@ -218,6 +245,11 @@ the underlying logic of the menu.
           {%- if section.settings.transparent_logo -%}
             {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent' -}}
           {%- endif -%}
+        {%- elsif section.settings.text_logo_heading != blank -%}
+          <span class="sr-only">{{ shop.name }}</span>
+          <span class="header__logo-text-brand">
+            {%- render 'header-text-logo', heading: section.settings.text_logo_heading, accent_color: section.settings.logo_accent_color -%}
+          </span>
         {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
         {%- endif -%}
@@ -390,7 +422,19 @@ the underlying logic of the menu.
       "type": "text",
       "id": "logo_tagline",
       "label": "Logo tagline",
-      "info": "Optional line under logo (city, slogan). Example: New York."
+      "info": "Optional sans-serif line under the logo (usually city). Example: New York."
+    },
+    {
+      "type": "text",
+      "id": "text_logo_heading",
+      "label": "Text logo headline",
+      "info": "When no logo image is set: shop name styled as serif text. Put one & character to tint the ampersand (e.g. GRAYSON & PORTER)."
+    },
+    {
+      "type": "color",
+      "id": "logo_accent_color",
+      "label": "Ampersand accent color",
+      "default": "#c5b358"
     },
     {
       "type": "checkbox",
@@ -402,6 +446,10 @@ the underlying logic of the menu.
     {
       "type": "header",
       "content": "Navigation"
+    },
+    {
+      "type": "paragraph",
+      "content": "For this layout create a Menu (Online Store → Navigation) with items such as Home, Men, Women (add dropdown links underneath), Track your order, Contact, About us."
     },
     {
       "type": "link_list",
